@@ -66,11 +66,55 @@ Created 星期二 21 六月 2022
 			struct list_head list;  //链表节点
 			bool pending;           //添加一个新的timeout pending是true， false删除该节点timeout
 			uloop_timeout_handler cb; //超时处理函数
-			   struct timeval time;      //超时时间
+			struct timeval time;      //超时时间
 		};
 		
 	2.3.2 定时器使用接口
 		1）注册一个新的定时器
+		int uloop_timeout_add(struct uloop_timeout *timeout)
+		用户不直接使用，内部接口，被接口uloop_timeout_set调用。
+		将定时器插入到timeouts链表中，该链表成员根据超时时间从小到大排列。
+		{{.\pasted_image005.png}}
+		2）设置定时器超时时间（毫秒），并添加
+		int uloop_timeout_set(struct uloop_timeout *timeout, int msecs)；
+		如果pending为true,则从定时器链表中删除原先已存在的定时器。
+		设置定时器的超时时间点。
+		调用uloop_timeout_add接口将该定时器加入到定时器链表中。
 		
+		3）销毁指定定时器
+		int uloop_timeout_cancel(struct uloop_timeout *timeout)；
+		从定时器链表中删除指定定时器。
+		
+		4）获取定时器还剩多少事件超时
+		int uloop_timeout_remaining(struct uloop_timeout *timeout)；
+		这里pending标记可判断定时器是否处于生命周期，如果尚处在生命周期内，则返回离定时器超时还有多少时间，单位为毫秒。
 
+	2.3.4 定时器的使用
+		遍历定时器链表，如果有定时器已经超时，则执行改定时器的回调函数。
+		
+	**2.4进程事件**
+		2.4.1 进程事件处理结构
+			struct uloop_process {
+				   struct list_head list;             
+				   bool pending;                  
+				   uloop_process_handler cb;  /** 文件描述符， 调用者初始化 */
+				   pid_t pid;                 /** 文件描述符， 调用者初始化 */
+			};
+		
+		2.4.2 进程事件使用接口
+			1）注册新进程到事件处理循环中
+			int uloop_process_add(struct uloop_process *p)
+			将进程事件插入到进程事件链表中，链表根据__PID__从小到大排序。
+			其中p->proc.pid为注册到uloop监控的进程ID。
+			P->cb为进程退出的回调函数，类型为：
+				typedef void (*uloop_process_handler)(struct uloop_process *c, int ret)
+
+			2）从事件处理循环在销毁指定的进程
+			int uloop_process_delete(struct uloop_process *p)
+			从进程事件处理链表中删除该进程事件。
+			
+		2.4.3  进程事件吹流程
+			{{.\pasted_image006.png}}
+			
+			
 
