@@ -13,7 +13,7 @@ Created 星期二 21 六月 2022
 
 
 2、uloop_init 
-	[[学习笔记 -积累:libubox]]
+	[[学习笔记 -积累:第三方库:libubox]]
 
 3、宏ARRAY_SIZE，是求设备结构体中设备的个数，
 	定义在linux/kernel.h中
@@ -23,3 +23,8 @@ Created 星期二 21 六月 2022
 4、int signalfd(int fd, const sigset_t *mask, int flags);
 	#include <sys/signalfd.h>
 	Signalfd()创建一个文件描述符，可用于接收针对调用方的信号。 这提供了一种替代信号处理程序或sigwaitinfo(2)的方法，其优点是可以通过select(2)、poll(2)和epoll(7)监控文件描述符。 
+
+5、access 
+	#include <unistd.h>
+	 int access(const char *pathname, int mode);
+	检查调用进程是否可以访问文件路径名。 如果pathname是一个符号链接，它将被解除引用 

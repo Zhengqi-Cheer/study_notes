@@ -20,6 +20,7 @@ Created 星期二 21 六月 2022
 	uloop是libubox下的一个模块，有三个功能：文件描述符触发事件的监控，timeout定时器处理， 当前进程的子进程的维护
 	
 	**2.1 整体框架**
+		[[https://blog.csdn.net/u013401853/article/details/87076459?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165586448916781685343530%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165586448916781685343530&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-87076459-null-null.142^v20^pc_rank_34,157^v15^new_3&utm_term=uloop&spm=1018.2226.3001.4187|程序例程]]
 	2.1.1 主体框架接口
 		1）初始化事件循环
 			int uloop_init（void）；
@@ -55,7 +56,7 @@ Created 星期二 21 六月 2022
 		2）从事件处理循环中销毁指定描述符
 		　int uloop_fd_delete(struct uloop_fd *sock)；
 	
-	2.2.3描述符事件流程
+	2.2.3 描述符事件流程
 		　int uloop_fd_delete(struct uloop_fd *sock)
 			{{.\pasted_image003.png}}
 			
