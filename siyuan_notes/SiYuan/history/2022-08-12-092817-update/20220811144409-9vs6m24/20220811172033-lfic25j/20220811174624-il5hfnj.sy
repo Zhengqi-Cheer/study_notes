@@ -1,0 +1,237 @@
+{
+	"ID": "20220811174624-il5hfnj",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220811174624-il5hfnj",
+		"title": "二层交换机原理",
+		"updated": "20220812091837"
+	},
+	"Children": [
+		{
+			"ID": "20220811174741-ue1wmfn",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811174741-ue1wmfn",
+				"updated": "20220811180138"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "背景：共享式以太网造成的问题"
+				}
+			]
+		},
+		{
+			"ID": "20220811175509-0ndnfqa",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811175509-0ndnfqa",
+				"updated": "20220811175618"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t1）终端收到大量不属于自己的报文，需要对其进行过滤操作，影响终端的性能。"
+				}
+			]
+		},
+		{
+			"ID": "20220811175619-0idjcan",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811175619-0idjcan",
+				"updated": "20220811175738"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t2）两个主机之间的同信数据会毫无保留的被第三方主机收到，造成一定的安全隐患。"
+				}
+			]
+		},
+		{
+			"ID": "20220811175807-svjynap",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811175807-svjynap",
+				"updated": "20220811175936"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t3）当主机的链接数量较多时，平凡的冲突使得整个网络的带宽减少。通信质量变差。"
+				}
+			]
+		},
+		{
+			"ID": "20220812090213-p0ox14v",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812090213-p0ox14v",
+				"updated": "20220812091002"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "实质：MAC地址与端口对应的转发关系。"
+				}
+			]
+		},
+		{
+			"ID": "20220812090956-stxt3yl",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812090956-stxt3yl",
+				"updated": "20220812090957"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "二层转发技术的知识点包含：MAC地址，二层交换基本原理，VLAN，IVL\u0026SVL地址学习方式"
+				}
+			]
+		},
+		{
+			"ID": "20220811175443-z4ziu3o",
+			"Type": "NodeThematicBreak",
+			"Properties": {
+				"id": "20220811175443-z4ziu3o"
+			}
+		},
+		{
+			"ID": "20220811175741-9688c4n",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811175741-9688c4n"
+			}
+		},
+		{
+			"ID": "20220812090242-h7eioej",
+			"Type": "NodeHeading",
+			"HeadingLevel": 5,
+			"Properties": {
+				"id": "20220812090242-h7eioej",
+				"updated": "20220812090251"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "基本知识点："
+				}
+			]
+		},
+		{
+			"ID": "20220811175741-1za5fw3",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811175741-1za5fw3",
+				"updated": "20220811181656"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t广播域：接收同样广播消息的节点的集合"
+				}
+			]
+		},
+		{
+			"ID": "20220811181532-0gv5xk2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811181532-0gv5xk2",
+				"updated": "20220811181606"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t冲突域：连接在同一导线上的所有工作站的集合，或者说是同一物理网段上所有节点的集合或以太网上竞争同一带宽的节点集合。"
+				}
+			]
+		},
+		{
+			"ID": "20220811175444-6zqa6s6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811175444-6zqa6s6",
+				"updated": "20220812090321"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\tLAN：局域网"
+				}
+			]
+		},
+		{
+			"ID": "20220812090324-bgdqny8",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812090324-bgdqny8",
+				"updated": "20220812090535"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\tVLAN：虚拟局域网。设备逻辑地址上形成一个虚拟的工作组。VLAN 技术的特点在于可以根据需要动态的将一个大的局域网划分成许多不同的广播域。"
+				}
+			]
+		},
+		{
+			"ID": "20220812090341-ek2ssnh",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812090341-ek2ssnh",
+				"updated": "20220812091728"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\tMAC表项的老化时间："
+				}
+			]
+		},
+		{
+			"ID": "20220812091351-yqph3ot",
+			"Type": "NodeHeading",
+			"HeadingLevel": 5,
+			"Properties": {
+				"id": "20220812091351-yqph3ot",
+				"updated": "20220812091357"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "基本流程："
+				}
+			]
+		},
+		{
+			"ID": "20220812091404-ig49pev",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812091404-ig49pev",
+				"updated": "20220812091706"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t1）二层交换机收到以太帧，将其源地址与端口对应关系学习到MAC表。如果已经学习过该MAC与端口的对应关系，则会该表项刷新老化时间。"
+				}
+			]
+		},
+		{
+			"ID": "20220812091747-lf2e8jj",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812091747-lf2e8jj",
+				"updated": "20220812091837"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t2）根据以太帧的目的MAC地址取查找该MAC对应的端口。"
+				}
+			]
+		}
+	]
+}

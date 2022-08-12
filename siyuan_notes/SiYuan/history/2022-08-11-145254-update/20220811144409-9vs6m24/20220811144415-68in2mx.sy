@@ -1,0 +1,61 @@
+{
+	"ID": "20220811144415-68in2mx",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220811144415-68in2mx",
+		"title": "网络基础",
+		"updated": "20220811144701"
+	},
+	"Children": [
+		{
+			"ID": "20220811144415-qju7whb",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811144415-qju7whb",
+				"style": "background-color: var(--b3-font-background6);",
+				"updated": "20220811144616"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "1、衡量网络的主要指标"
+				}
+			]
+		},
+		{
+			"ID": "20220811144618-mm1ob5a",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811144618-mm1ob5a",
+				"updated": "20220811144628"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t1）带宽"
+				}
+			]
+		},
+		{
+			"ID": "20220811144630-9n2yfsx",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811144630-9n2yfsx",
+				"updated": "20220811144701"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t定义：在一定的时间内一个字节"
+				}
+			]
+		},
+		{
+			"ID": "20220811144450-pdil74f",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811144450-pdil74f"
+			}
+		}
+	]
+}

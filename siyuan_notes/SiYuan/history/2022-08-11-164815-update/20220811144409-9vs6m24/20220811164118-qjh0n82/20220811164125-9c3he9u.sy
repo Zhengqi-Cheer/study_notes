@@ -1,0 +1,53 @@
+{
+	"ID": "20220811164125-9c3he9u",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220811164125-9c3he9u",
+		"title": "IP协议",
+		"updated": "20220811164812"
+	},
+	"Children": [
+		{
+			"ID": "20220811164125-m77mpoq",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811164125-m77mpoq",
+				"updated": "20220811164812"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "--------负责网络层寻址、路由选择、分段以及包重组。"
+				}
+			]
+		},
+		{
+			"ID": "20220811164755-gfkkjuw",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811164755-gfkkjuw"
+			}
+		},
+		{
+			"ID": "20220811164808-hwz6jft",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811164808-hwz6jft"
+			}
+		},
+		{
+			"ID": "20220811164808-65uotib",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811164808-65uotib"
+			}
+		},
+		{
+			"ID": "20220811164808-302m6j6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811164808-302m6j6"
+			}
+		}
+	]
+}

@@ -1,0 +1,322 @@
+{
+	"ID": "20220811144415-68in2mx",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220811144415-68in2mx",
+		"title": "网络基础",
+		"updated": "20220811150815"
+	},
+	"Children": [
+		{
+			"ID": "20220811144415-qju7whb",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811144415-qju7whb",
+				"style": "background-color: var(--b3-font-background6);",
+				"updated": "20220811144616"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "1、衡量网络的主要指标"
+				}
+			]
+		},
+		{
+			"ID": "20220811144618-mm1ob5a",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811144618-mm1ob5a",
+				"updated": "20220811144628"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t1）带宽"
+				}
+			]
+		},
+		{
+			"ID": "20220811144630-9n2yfsx",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811144630-9n2yfsx",
+				"updated": "20220811145432"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t定义：在一定的时间内从一个节点传送到另一个节点的数据量。还分为数字带宽和模拟带宽。"
+				}
+			]
+		},
+		{
+			"ID": "20220811145432-bx045pr",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811145432-bx045pr",
+				"updated": "20220811145513"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t单位：bps，代表每秒某条链能够发送的数据位数"
+				}
+			]
+		},
+		{
+			"ID": "20220811145513-9vwkto2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811145513-9vwkto2",
+				"updated": "20220811145525"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\tPs："
+				}
+			]
+		},
+		{
+			"ID": "20220811145535-dnocjtm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811145535-dnocjtm",
+				"updated": "20220811145703"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t\t吞吐量：是指对网络、设备、端口、虚电路或其他设施，单位时间内"
+				},
+				{
+					"Type": "NodeStrong",
+					"Data": "strong",
+					"Properties": {
+						"style": "color: var(--b3-font-color6);"
+					},
+					"Children": [
+						{
+							"Type": "NodeStrongA6kOpenMarker",
+							"Data": "**"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "成功地"
+						},
+						{
+							"Type": "NodeStrongA6kCloseMarker",
+							"Data": "**"
+						}
+					]
+				},
+				{
+					"Type": "NodeKramdownSpanIAL",
+					"Data": "{: style=\"color: var(--b3-font-color6);\"}"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "传送数据的数量（以比特、字节、分组等测量）"
+				}
+			]
+		},
+		{
+			"ID": "20220811145714-zrdxwli",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811145714-zrdxwli"
+			}
+		},
+		{
+			"ID": "20220811145825-9uaucbr",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811145825-9uaucbr",
+				"updated": "20220811145855"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t2）延迟"
+				}
+			]
+		},
+		{
+			"ID": "20220811145858-xdov6v6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811145858-xdov6v6",
+				"updated": "20220811150017"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t定义：网络把数据从一个网络节点传送到另一个号个网络节点所需要的时\t\t\t间。"
+				}
+			]
+		},
+		{
+			"ID": "20220811150018-q45p2zk",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811150018-q45p2zk",
+				"updated": "20220811150112"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t影响因素：传播延迟，交换延迟、截止访问延迟和队列延迟。"
+				}
+			]
+		},
+		{
+			"ID": "20220811150154-3fitkd3",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811150154-3fitkd3",
+				"updated": "20220811150203"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "2、OSI七层模型"
+				}
+			]
+		},
+		{
+			"ID": "20220811150149-if7pv2v",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811150149-if7pv2v",
+				"updated": "20220811150747"
+			},
+			"Children": [
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Properties": {
+						"parent-style": "display: block;"
+					},
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "image"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/image-20220811150151-pozmizv.png"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeKramdownSpanIAL",
+					"Data": "{: parent-style=\"display: block;\"}"
+				}
+			]
+		},
+		{
+			"ID": "20220811150239-5tyasqm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811150239-5tyasqm"
+			}
+		},
+		{
+			"ID": "20220811150727-1qhoxn7",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811150727-1qhoxn7",
+				"updated": "20220811150736"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "3、tcp/ip模型"
+				}
+			]
+		},
+		{
+			"ID": "20220811150737-m5w7px2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811150737-m5w7px2",
+				"updated": "20220811150744"
+			},
+			"Children": [
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Properties": {
+						"parent-style": "display: block;"
+					},
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "image"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/image-20220811150739-uh1kp1c.png"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeKramdownSpanIAL",
+					"Data": "{: parent-style=\"display: block;\"}"
+				}
+			]
+		},
+		{
+			"ID": "20220811150755-cs9g838",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811150755-cs9g838",
+				"updated": "20220811150800"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "4、"
+				}
+			]
+		},
+		{
+			"ID": "20220811150815-h2xq9yd",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811150815-h2xq9yd"
+			}
+		}
+	]
+}

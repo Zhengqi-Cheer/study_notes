@@ -1,0 +1,61 @@
+{
+	"ID": "20220812161930-tm8kko8",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220812161930-tm8kko8",
+		"title": "STP（生成树协议）",
+		"updated": "20220812162647"
+	},
+	"Children": [
+		{
+			"ID": "20220812161930-gn27mio",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812161930-gn27mio",
+				"updated": "20220812162415"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "背景：网络是一个网状的，当发送一个广播帧时，帧会不断的增生，形成广播风暴。广播风暴占据大量的带宽。"
+				}
+			]
+		},
+		{
+			"ID": "20220812161957-clg59ns",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812161957-clg59ns",
+				"updated": "20220812162647"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "作用：防止"
+				}
+			]
+		},
+		{
+			"ID": "20220812161958-m9fnykh",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812161958-m9fnykh"
+			}
+		},
+		{
+			"ID": "20220812161958-88v5jo3",
+			"Type": "NodeThematicBreak",
+			"Properties": {
+				"id": "20220812161958-88v5jo3"
+			}
+		},
+		{
+			"ID": "20220812162000-ndjv3b4",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812162000-ndjv3b4",
+				"updated": "20220812162001"
+			}
+		}
+	]
+}

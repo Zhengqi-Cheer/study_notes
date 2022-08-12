@@ -1,0 +1,19 @@
+{
+	"ID": "20220811164246-q8c34jt",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220811164246-q8c34jt",
+		"title": "DHCP",
+		"updated": "20220811164253"
+	},
+	"Children": [
+		{
+			"ID": "20220811164246-8qlypqm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811164246-8qlypqm",
+				"updated": "20220811164246"
+			}
+		}
+	]
+}

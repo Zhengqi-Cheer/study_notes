@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-08-02T09:36:33+08:00
+
+====== 以太网 ======
+Created 星期二 02 八月 2022
+
+1、是一种计算机局域网  组网技术
+
+
+
+**计算机网络的主要指标**

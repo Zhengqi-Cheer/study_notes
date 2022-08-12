@@ -1,0 +1,60 @@
+{
+	"ID": "20220811164222-t1zb774",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220811164222-t1zb774",
+		"title": "ARP与RARP",
+		"updated": "20220811165809"
+	},
+	"Children": [
+		{
+			"ID": "20220811165309-swj0ejw",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811165309-swj0ejw",
+				"updated": "20220811165413"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "---------将主机的网络地址动态映射为MAC地址的方法"
+				}
+			]
+		},
+		{
+			"ID": "20220811165415-cqdrcma",
+			"Type": "NodeThematicBreak",
+			"Properties": {
+				"id": "20220811165415-cqdrcma"
+			}
+		},
+		{
+			"ID": "20220811165416-ecizuxr",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811165416-ecizuxr",
+				"updated": "20220811165732"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "工作机制："
+				}
+			]
+		},
+		{
+			"ID": "20220811165733-q7w281a",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811165733-q7w281a",
+				"updated": "20220811165809"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t1）主机A向主机B发送ip包，"
+				}
+			]
+		}
+	]
+}

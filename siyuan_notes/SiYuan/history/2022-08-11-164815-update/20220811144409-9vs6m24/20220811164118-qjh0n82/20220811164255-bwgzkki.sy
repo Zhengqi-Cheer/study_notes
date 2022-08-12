@@ -1,0 +1,19 @@
+{
+	"ID": "20220811164255-bwgzkki",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220811164255-bwgzkki",
+		"title": "IPV6",
+		"updated": "20220811164303"
+	},
+	"Children": [
+		{
+			"ID": "20220811164255-9dsynr2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811164255-9dsynr2",
+				"updated": "20220811164255"
+			}
+		}
+	]
+}

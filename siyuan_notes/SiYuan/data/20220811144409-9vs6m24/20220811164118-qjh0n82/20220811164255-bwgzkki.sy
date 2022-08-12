@@ -1,0 +1,142 @@
+{
+	"ID": "20220811164255-bwgzkki",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220811164255-bwgzkki",
+		"title": "IPV6",
+		"updated": "20220811171625"
+	},
+	"Children": [
+		{
+			"ID": "20220811164255-9dsynr2",
+			"Type": "NodeThematicBreak",
+			"Properties": {
+				"id": "20220811164255-9dsynr2"
+			}
+		},
+		{
+			"ID": "20220811171116-6xrct9j",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811171116-6xrct9j",
+				"updated": "20220811171305"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "总共128位，划分为8段，每段16位。将每段转换位十六进制数，并用：隔开。如图"
+				},
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "image"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/image-20220811171256-xko9vum.png"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20220811171251-7gsrvzm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811171251-7gsrvzm"
+			}
+		},
+		{
+			"ID": "20220811171307-2vpom03",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811171307-2vpom03",
+				"updated": "20220811171450"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "IPV6没有广播地址"
+				}
+			]
+		},
+		{
+			"ID": "20220811171451-klr6ms4",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811171451-klr6ms4",
+				"updated": "20220811171553"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "IPV6组播地址：FF00::/8"
+				}
+			]
+		},
+		{
+			"ID": "20220811171607-5fbmoqp",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811171607-5fbmoqp",
+				"updated": "20220811171625"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "任播地址：特有"
+				}
+			]
+		},
+		{
+			"ID": "20220811171308-dr8s3zr",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811171308-dr8s3zr"
+			}
+		},
+		{
+			"ID": "20220811171309-jb6uobj",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811171309-jb6uobj"
+			}
+		},
+		{
+			"ID": "20220811171310-ddkfz28",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811171310-ddkfz28"
+			}
+		},
+		{
+			"ID": "20220811171310-gyvo0f0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811171310-gyvo0f0"
+			}
+		}
+	]
+}

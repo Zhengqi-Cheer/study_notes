@@ -1,0 +1,159 @@
+{
+	"ID": "20220811174638-odewxc2",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220811174638-odewxc2",
+		"title": "三层交换机原理",
+		"updated": "20220812145250"
+	},
+	"Children": [
+		{
+			"ID": "20220811174638-ytx8r5k",
+			"Type": "NodeThematicBreak",
+			"Properties": {
+				"id": "20220811174638-ytx8r5k"
+			}
+		},
+		{
+			"ID": "20220812143649-88nmzx9",
+			"Type": "NodeThematicBreak",
+			"Properties": {
+				"id": "20220812143649-88nmzx9"
+			}
+		},
+		{
+			"ID": "20220812143652-at1n0m0",
+			"Type": "NodeThematicBreak",
+			"Properties": {
+				"id": "20220812143652-at1n0m0"
+			}
+		},
+		{
+			"ID": "20220812143652-0xj8vxd",
+			"Type": "NodeThematicBreak",
+			"Properties": {
+				"id": "20220812143652-0xj8vxd"
+			}
+		},
+		{
+			"ID": "20220812143653-55e1jnx",
+			"Type": "NodeThematicBreak",
+			"Properties": {
+				"id": "20220812143653-55e1jnx"
+			}
+		},
+		{
+			"ID": "20220812143654-iyxugzi",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812143654-iyxugzi"
+			}
+		},
+		{
+			"ID": "20220812143655-trsr0d2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812143655-trsr0d2"
+			}
+		},
+		{
+			"ID": "20220812143655-ftwsg9w",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812143655-ftwsg9w"
+			}
+		},
+		{
+			"ID": "20220812143656-0eb7p81",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812143656-0eb7p81",
+				"updated": "20220812143738"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "前置条件：目的IP与源IP不在通过网段。"
+				}
+			]
+		},
+		{
+			"ID": "20220812143738-39ui429",
+			"Type": "NodeHeading",
+			"HeadingLevel": 4,
+			"Properties": {
+				"id": "20220812143738-39ui429",
+				"updated": "20220812143846"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "基本流程：主机A--\u003e交换机--\u003e主机B"
+				}
+			]
+		},
+		{
+			"ID": "20220812143803-6tuhvr1",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812143803-6tuhvr1",
+				"updated": "20220812144716"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t1）主机A发现主机B的IP地址与自己的IP地址不在同一个网段，则向网关发送ARP请求网关MAC S，"
+				}
+			]
+		},
+		{
+			"ID": "20220812144059-tfi0fpm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812144059-tfi0fpm",
+				"updated": "20220812145148"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t2）交换机收到ARP请求后，发现ARP请求的IP地址为自己的三层接口IP，然后回复包含自己三层接口MAC S地址的ARP回复报文。同时记录主机A的IP地址和MAC地址对应的关系记录到ARP表。"
+				}
+			]
+		},
+		{
+			"ID": "20220812144847-rsh4586",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812144847-rsh4586",
+				"updated": "20220812145243"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t3）主机A在收到ARP回复报文后，将MAC S作为目的MAC封装在报文中，并发送。"
+				}
+			]
+		},
+		{
+			"ID": "20220812145248-rljjy37",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812145248-rljjy37",
+				"updated": "20220812145250"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t4）"
+				}
+			]
+		},
+		{
+			"ID": "20220812143752-rqrpw4w",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812143752-rqrpw4w"
+			}
+		}
+	]
+}

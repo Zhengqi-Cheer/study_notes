@@ -1,0 +1,18 @@
+{
+	"ID": "20220811174624-il5hfnj",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220811174624-il5hfnj",
+		"title": "二层交换机原理",
+		"updated": "20220811174741"
+	},
+	"Children": [
+		{
+			"ID": "20220811174741-ue1wmfn",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811174741-ue1wmfn"
+			}
+		}
+	]
+}

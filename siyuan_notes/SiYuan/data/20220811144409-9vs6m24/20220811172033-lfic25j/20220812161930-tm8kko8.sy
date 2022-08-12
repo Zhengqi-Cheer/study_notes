@@ -1,0 +1,94 @@
+{
+	"ID": "20220812161930-tm8kko8",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220812161930-tm8kko8",
+		"title": "STP（生成树协议）",
+		"updated": "20220812163803"
+	},
+	"Children": [
+		{
+			"ID": "20220812161930-gn27mio",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812161930-gn27mio",
+				"updated": "20220812163521"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "背景：网络是一个网状的，当发送一个广播帧（单播也会增生，但是慢）时，帧会不断的增生，形成广播风暴。广播风暴占据大量的带宽。"
+				}
+			]
+		},
+		{
+			"ID": "20220812161957-clg59ns",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812161957-clg59ns",
+				"updated": "20220812163428"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "作用：防止报文在网络中不断增生。"
+				}
+			]
+		},
+		{
+			"ID": "20220812161958-m9fnykh",
+			"Type": "NodeThematicBreak",
+			"Properties": {
+				"id": "20220812161958-m9fnykh"
+			}
+		},
+		{
+			"ID": "20220812163646-7rjtbca",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812163646-7rjtbca"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "采用的协议报文：BODU（桥协议数据单元）"
+				}
+			]
+		},
+		{
+			"ID": "20220812163700-5a0l50w",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812163700-5a0l50w",
+				"updated": "20220812163716"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "BPDU分类："
+				}
+			]
+		},
+		{
+			"ID": "20220812163717-kmnu9f6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812163717-kmnu9f6",
+				"updated": "20220812163719"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t1）"
+				}
+			]
+		},
+		{
+			"ID": "20220812163803-35uwnyv",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812163803-35uwnyv"
+			}
+		}
+	]
+}

@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-08-11T12:49:50+08:00
+
+====== connect编译环境 ======
+Created 星期四 11 八月 2022
+
+
+
+sudo apt-get install quilt
+sudo apt-get install quagga
+sudo apt-get install gawk
+sudo apt-get install automake
+sudo apt-get install texinfo
+
+
+
+netfward编译环境
+
+sudo apt-get  install flex bison
+sudo apt-get  install u-boot-tools

@@ -1,0 +1,542 @@
+{
+	"ID": "20220811174624-il5hfnj",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220811174624-il5hfnj",
+		"title": "二层交换机原理",
+		"updated": "20220812115950"
+	},
+	"Children": [
+		{
+			"ID": "20220811174741-ue1wmfn",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811174741-ue1wmfn",
+				"updated": "20220811180138"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "背景：共享式以太网造成的问题"
+				}
+			]
+		},
+		{
+			"ID": "20220811175509-0ndnfqa",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811175509-0ndnfqa",
+				"updated": "20220811175618"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t1）终端收到大量不属于自己的报文，需要对其进行过滤操作，影响终端的性能。"
+				}
+			]
+		},
+		{
+			"ID": "20220811175619-0idjcan",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811175619-0idjcan",
+				"updated": "20220811175738"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t2）两个主机之间的同信数据会毫无保留的被第三方主机收到，造成一定的安全隐患。"
+				}
+			]
+		},
+		{
+			"ID": "20220811175807-svjynap",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811175807-svjynap",
+				"updated": "20220811175936"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t3）当主机的链接数量较多时，平凡的冲突使得整个网络的带宽减少。通信质量变差。"
+				}
+			]
+		},
+		{
+			"ID": "20220812090213-p0ox14v",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812090213-p0ox14v",
+				"updated": "20220812091002"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "实质：MAC地址与端口对应的转发关系。"
+				}
+			]
+		},
+		{
+			"ID": "20220812090956-stxt3yl",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812090956-stxt3yl",
+				"updated": "20220812090957"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "二层转发技术的知识点包含：MAC地址，二层交换基本原理，VLAN，IVL\u0026SVL地址学习方式"
+				}
+			]
+		},
+		{
+			"ID": "20220811175443-z4ziu3o",
+			"Type": "NodeThematicBreak",
+			"Properties": {
+				"id": "20220811175443-z4ziu3o"
+			}
+		},
+		{
+			"ID": "20220811175741-9688c4n",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811175741-9688c4n"
+			}
+		},
+		{
+			"ID": "20220812090242-h7eioej",
+			"Type": "NodeHeading",
+			"HeadingLevel": 5,
+			"Properties": {
+				"id": "20220812090242-h7eioej",
+				"updated": "20220812090251"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "基本知识点："
+				}
+			]
+		},
+		{
+			"ID": "20220811175741-1za5fw3",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811175741-1za5fw3",
+				"updated": "20220812114010"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t广播域：接收同样广播消息的节点的集合。广播能到达的范围。"
+				}
+			]
+		},
+		{
+			"ID": "20220811181532-0gv5xk2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811181532-0gv5xk2",
+				"updated": "20220811181606"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t冲突域：连接在同一导线上的所有工作站的集合，或者说是同一物理网段上所有节点的集合或以太网上竞争同一带宽的节点集合。"
+				}
+			]
+		},
+		{
+			"ID": "20220811175444-6zqa6s6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811175444-6zqa6s6",
+				"updated": "20220812090321"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\tLAN：局域网"
+				}
+			]
+		},
+		{
+			"ID": "20220812090324-bgdqny8",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812090324-bgdqny8",
+				"updated": "20220812090535"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\tVLAN：虚拟局域网。设备逻辑地址上形成一个虚拟的工作组。VLAN 技术的特点在于可以根据需要动态的将一个大的局域网划分成许多不同的广播域。"
+				}
+			]
+		},
+		{
+			"ID": "20220812090341-ek2ssnh",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812090341-ek2ssnh",
+				"updated": "20220812091728"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\tMAC表项的老化时间："
+				}
+			]
+		},
+		{
+			"ID": "20220812091351-yqph3ot",
+			"Type": "NodeHeading",
+			"HeadingLevel": 5,
+			"Properties": {
+				"id": "20220812091351-yqph3ot",
+				"updated": "20220812094459"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "不支持VLAN的二层转发基本流程："
+				}
+			]
+		},
+		{
+			"ID": "20220812091404-ig49pev",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812091404-ig49pev",
+				"updated": "20220812091706"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t1）二层交换机收到以太帧，将其源地址与端口对应关系学习到MAC表。如果已经学习过该MAC与端口的对应关系，则会该表项刷新老化时间。"
+				}
+			]
+		},
+		{
+			"ID": "20220812091747-lf2e8jj",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812091747-lf2e8jj",
+				"updated": "20220812093542"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t2）根据以太帧的目的MAC地址取查找该MAC对应的端口。"
+				}
+			]
+		},
+		{
+			"ID": "20220812093611-zjoh9b8",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812093611-zjoh9b8",
+				"updated": "20220812093944"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\ta. 如果目的地址为广播地址，则向所有端口转发该以太帧（广播）。"
+				}
+			]
+		},
+		{
+			"ID": "20220812093626-v3r1bv6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812093626-v3r1bv6",
+				"updated": "20220812093957"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\tb. 如果MAC表没有匹配项，则向其他所以端口转发该以太帧（称为泛洪）。"
+				}
+			]
+		},
+		{
+			"ID": "20220812093631-rfv5t54",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812093631-rfv5t54",
+				"updated": "20220812094026"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\tc. 如果MAC项对应的端口与接收到的端口一致，则丢该帧。"
+				}
+			]
+		},
+		{
+			"ID": "20220812093718-s2e8u5p",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812093718-s2e8u5p",
+				"updated": "20220812094035"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\td. 如果MAC表中有对应的表项，则转发到相应的端口。"
+				}
+			]
+		},
+		{
+			"ID": "20220812093848-xos3rm3",
+			"Type": "NodeHeading",
+			"HeadingLevel": 5,
+			"Properties": {
+				"id": "20220812093848-xos3rm3",
+				"updated": "20220812094545"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "支持VLAN的二层转发"
+				}
+			]
+		},
+		{
+			"ID": "20220812095227-14e5aab",
+			"Type": "NodeHeading",
+			"HeadingLevel": 6,
+			"Properties": {
+				"id": "20220812095227-14e5aab",
+				"updated": "20220812111322"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "SVL（shared VLAN learnig）方式："
+				}
+			]
+		},
+		{
+			"ID": "20220812111526-c09v2yd",
+			"Type": "NodeHeading",
+			"HeadingLevel": 6,
+			"Properties": {
+				"id": "20220812111526-c09v2yd",
+				"updated": "20220812111538"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t基本流程："
+				}
+			]
+		},
+		{
+			"ID": "20220812111538-f8aefai",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812111538-f8aefai",
+				"updated": "20220812115119"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t1）接收以太帧学习源MAC与端口的对应关系，或刷新MAC地址表项。"
+				},
+				{
+					"Type": "NodeStrong",
+					"Data": "strong",
+					"Properties": {
+						"style": "color: var(--b3-font-color9);"
+					},
+					"Children": [
+						{
+							"Type": "NodeStrongA6kOpenMarker",
+							"Data": "**"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "（来的以太帧是带tag的？）"
+						},
+						{
+							"Type": "NodeStrongA6kCloseMarker",
+							"Data": "**"
+						}
+					]
+				},
+				{
+					"Type": "NodeKramdownSpanIAL",
+					"Data": "{: style=\"color: var(--b3-font-color9);\"}"
+				}
+			]
+		},
+		{
+			"ID": "20220812112044-uv8r59l",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812112044-uv8r59l",
+				"updated": "20220812115001"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t2）根据目的MAC信息查找MAC地址表，"
+				}
+			]
+		},
+		{
+			"ID": "20220812115008-54maptf",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812115008-54maptf",
+				"updated": "20220812115013"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\ta、如果没有找到匹配项，那么在报文对应的VLAN内广播；"
+				}
+			]
+		},
+		{
+			"ID": "20220812115128-84p9bf8",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812115128-84p9bf8",
+				"updated": "20220812115156"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\tb、找到匹配项："
+				}
+			]
+		},
+		{
+			"ID": "20220812115157-9sb69ra",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812115157-9sb69ra",
+				"updated": "20220812115312"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t\t\t①不属于报文对应的VLAN，--\u003e 丢弃。"
+				}
+			]
+		},
+		{
+			"ID": "20220812115306-142fqu0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812115306-142fqu0",
+				"updated": "20220812115419"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t\t\t②属于报文对应的VLAN--\u003e转发到相应端口"
+				}
+			]
+		},
+		{
+			"ID": "20220812095830-8z9mtth",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812095830-8z9mtth",
+				"updated": "20220812115507"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\tc、对应的端口与收到的以太帧端口一致，--\u003e丢弃。"
+				}
+			]
+		},
+		{
+			"ID": "20220812095830-v103tzi",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812095830-v103tzi"
+			}
+		},
+		{
+			"ID": "20220812095308-m2tih2n",
+			"Type": "NodeHeading",
+			"HeadingLevel": 6,
+			"Properties": {
+				"id": "20220812095308-m2tih2n",
+				"updated": "20220812115927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "LVL（Independent VLAN Learning）方式："
+				}
+			]
+		},
+		{
+			"ID": "20220812115927-yh3exuw",
+			"Type": "NodeHeading",
+			"HeadingLevel": 6,
+			"Properties": {
+				"id": "20220812115927-yh3exuw",
+				"updated": "20220812115932"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t基本流程："
+				}
+			]
+		},
+		{
+			"ID": "20220812115945-6bxqges",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812115945-6bxqges",
+				"updated": "20220812115950"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t1）"
+				}
+			]
+		},
+		{
+			"ID": "20220812095125-vcocicz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812095125-vcocicz"
+			}
+		},
+		{
+			"ID": "20220812112758-vqe7zok",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812112758-vqe7zok",
+				"updated": "20220812112813"
+			}
+		},
+		{
+			"ID": "20220812112815-mncj2km",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812112815-mncj2km",
+				"updated": "20220812112833"
+			}
+		},
+		{
+			"ID": "20220812112820-11doe9d",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220812112820-11doe9d"
+			}
+		}
+	]
+}

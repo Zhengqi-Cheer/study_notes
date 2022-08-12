@@ -1,0 +1,222 @@
+{
+	"ID": "20220811164222-t1zb774",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220811164222-t1zb774",
+		"title": "ARP与RARP",
+		"updated": "20220811170809"
+	},
+	"Children": [
+		{
+			"ID": "20220811165309-swj0ejw",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811165309-swj0ejw",
+				"updated": "20220811165413"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "---------将主机的网络地址动态映射为MAC地址的方法"
+				}
+			]
+		},
+		{
+			"ID": "20220811165415-cqdrcma",
+			"Type": "NodeThematicBreak",
+			"Properties": {
+				"id": "20220811165415-cqdrcma"
+			}
+		},
+		{
+			"ID": "20220811165416-ecizuxr",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811165416-ecizuxr",
+				"updated": "20220811165817"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "工作机制：主机A向主机B发送ip包，"
+				}
+			]
+		},
+		{
+			"ID": "20220811165733-q7w281a",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811165733-q7w281a",
+				"updated": "20220811165923"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t1）查ARP表，是否有B的ip对应的MAC地址，若有则直接封装帧发给B"
+				}
+			]
+		},
+		{
+			"ID": "20220811165924-yb7w7cy",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811165924-yb7w7cy",
+				"updated": "20220811170051"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t2）若没有，则占存该ip包，然后广播一个ARP请求得到B的MAC地址"
+				}
+			]
+		},
+		{
+			"ID": "20220811170052-4wxrzw2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811170052-4wxrzw2",
+				"updated": "20220811170251"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t3）网段上的主机都拿该IP与自己比较，若是则回应，否丢弃，不做应答。"
+				}
+			]
+		},
+		{
+			"ID": "20220811170231-1cezaru",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811170231-1cezaru",
+				"updated": "20220811170520"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t4）A得到B的MAC地址后，添加对应的映射关系到ARP表，将MAC地址与刚才暂存的ip包封装成帧发送给B。"
+				}
+			]
+		},
+		{
+			"ID": "20220811170803-vlj2l76",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811170803-vlj2l76"
+			}
+		},
+		{
+			"ID": "20220811170803-8artv7t",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811170803-8artv7t"
+			}
+		},
+		{
+			"ID": "20220811170547-v8qba2m",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811170547-v8qba2m"
+			}
+		},
+		{
+			"ID": "20220811170548-crvzexm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811170548-crvzexm"
+			}
+		},
+		{
+			"ID": "20220811170551-plw9shm",
+			"Type": "NodeThematicBreak",
+			"Properties": {
+				"id": "20220811170551-plw9shm"
+			}
+		},
+		{
+			"ID": "20220811170554-sv01x3l",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811170554-sv01x3l",
+				"updated": "20220811170639"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "代理ARP--应用于两个主机不在同一个网段。还是上面的模型"
+				}
+			]
+		},
+		{
+			"ID": "20220811170640-vdw8bac",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811170640-vdw8bac",
+				"updated": "20220811170753"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t"
+				}
+			]
+		},
+		{
+			"ID": "20220811170759-ooz7ix7",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811170759-ooz7ix7"
+			}
+		},
+		{
+			"ID": "20220811170805-md5b0ab",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811170805-md5b0ab"
+			}
+		},
+		{
+			"ID": "20220811170805-v6wlig1",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811170805-v6wlig1"
+			}
+		},
+		{
+			"ID": "20220811170805-isadn51",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811170805-isadn51"
+			}
+		},
+		{
+			"ID": "20220811170806-4tv33a7",
+			"Type": "NodeThematicBreak",
+			"Properties": {
+				"id": "20220811170806-4tv33a7"
+			}
+		},
+		{
+			"ID": "20220811170800-enk5ebx",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811170800-enk5ebx",
+				"updated": "20220811170809"
+			}
+		},
+		{
+			"ID": "20220811170800-kgtck2h",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811170800-kgtck2h"
+			}
+		},
+		{
+			"ID": "20220811170800-5poh11v",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811170800-5poh11v"
+			}
+		}
+	]
+}

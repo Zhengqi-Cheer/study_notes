@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-08-11T10:14:29+08:00
+
+====== 虚拟机装机必备配置 ======
+Created 星期四 11 八月 2022
+
+先sudo apt-get update
+
+安装vim
+sudo apt-get install vim-gtk
+安装ssh
+sudo apt-get install openssh-server
+安装samba
+sudo apt-get install samba
+

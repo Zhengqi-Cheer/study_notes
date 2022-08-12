@@ -1,0 +1,72 @@
+{
+	"ID": "20220811164118-qjh0n82",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220811164118-qjh0n82",
+		"title": "网络层",
+		"updated": "20220811164528"
+	},
+	"Children": [
+		{
+			"ID": "20220811164118-skf0wul",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220811164118-skf0wul",
+				"updated": "20220811164528"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "主要作用"
+				}
+			]
+		},
+		{
+			"ID": "20220811164529-k1ey0c2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811164529-k1ey0c2",
+				"updated": "20220811164614"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t"
+				},
+				{
+					"Type": "NodeStrong",
+					"Data": "strong",
+					"Properties": {
+						"style": "background-color: var(--b3-font-background9);"
+					},
+					"Children": [
+						{
+							"Type": "NodeStrongA6kOpenMarker",
+							"Data": "**"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "负责网络层寻址、路由选择、分段以及包重组。"
+						},
+						{
+							"Type": "NodeStrongA6kCloseMarker",
+							"Data": "**"
+						}
+					]
+				},
+				{
+					"Type": "NodeKramdownSpanIAL",
+					"Data": "{: style=\"background-color: var(--b3-font-background9);\"}"
+				}
+			]
+		},
+		{
+			"ID": "20220811164606-as6x7tk",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811164606-as6x7tk"
+			}
+		}
+	]
+}

@@ -1,0 +1,116 @@
+{
+	"ID": "20220811174624-il5hfnj",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220811174624-il5hfnj",
+		"title": "二层交换机原理",
+		"updated": "20220811181656"
+	},
+	"Children": [
+		{
+			"ID": "20220811174741-ue1wmfn",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811174741-ue1wmfn",
+				"updated": "20220811180138"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "背景：共享式以太网造成的问题"
+				}
+			]
+		},
+		{
+			"ID": "20220811175509-0ndnfqa",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811175509-0ndnfqa",
+				"updated": "20220811175618"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t1）终端收到大量不属于自己的报文，需要对其进行过滤操作，影响终端的性能。"
+				}
+			]
+		},
+		{
+			"ID": "20220811175619-0idjcan",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811175619-0idjcan",
+				"updated": "20220811175738"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t2）两个主机之间的同信数据会毫无保留的被第三方主机收到，造成一定的安全隐患。"
+				}
+			]
+		},
+		{
+			"ID": "20220811175807-svjynap",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811175807-svjynap",
+				"updated": "20220811175936"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t3）当主机的链接数量较多时，平凡的冲突使得整个网络的带宽减少。通信质量变差。"
+				}
+			]
+		},
+		{
+			"ID": "20220811175443-z4ziu3o",
+			"Type": "NodeThematicBreak",
+			"Properties": {
+				"id": "20220811175443-z4ziu3o"
+			}
+		},
+		{
+			"ID": "20220811175741-9688c4n",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811175741-9688c4n"
+			}
+		},
+		{
+			"ID": "20220811175741-1za5fw3",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811175741-1za5fw3",
+				"updated": "20220811181656"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t广播域：接收同样广播消息的节点的集合"
+				}
+			]
+		},
+		{
+			"ID": "20220811181532-0gv5xk2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811181532-0gv5xk2",
+				"updated": "20220811181606"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t冲突域：连接在同一导线上的所有工作站的集合，或者说是同一物理网段上所有节点的集合或以太网上竞争同一带宽的节点集合。"
+				}
+			]
+		},
+		{
+			"ID": "20220811175444-6zqa6s6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811175444-6zqa6s6"
+			}
+		}
+	]
+}

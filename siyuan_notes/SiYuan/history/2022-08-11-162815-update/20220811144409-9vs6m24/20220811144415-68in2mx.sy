@@ -1,0 +1,698 @@
+{
+	"ID": "20220811144415-68in2mx",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220811144415-68in2mx",
+		"title": "网络基础",
+		"updated": "20220811162805"
+	},
+	"Children": [
+		{
+			"ID": "20220811144415-qju7whb",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811144415-qju7whb",
+				"style": "background-color: var(--b3-font-background6);",
+				"updated": "20220811144616"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "1、衡量网络的主要指标"
+				}
+			]
+		},
+		{
+			"ID": "20220811144618-mm1ob5a",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811144618-mm1ob5a",
+				"updated": "20220811144628"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t1）带宽"
+				}
+			]
+		},
+		{
+			"ID": "20220811144630-9n2yfsx",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811144630-9n2yfsx",
+				"updated": "20220811145432"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t定义：在一定的时间内从一个节点传送到另一个节点的数据量。还分为数字带宽和模拟带宽。"
+				}
+			]
+		},
+		{
+			"ID": "20220811145432-bx045pr",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811145432-bx045pr",
+				"updated": "20220811145513"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t单位：bps，代表每秒某条链能够发送的数据位数"
+				}
+			]
+		},
+		{
+			"ID": "20220811145513-9vwkto2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811145513-9vwkto2",
+				"updated": "20220811145525"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\tPs："
+				}
+			]
+		},
+		{
+			"ID": "20220811145535-dnocjtm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811145535-dnocjtm",
+				"updated": "20220811145703"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t\t吞吐量：是指对网络、设备、端口、虚电路或其他设施，单位时间内"
+				},
+				{
+					"Type": "NodeStrong",
+					"Data": "strong",
+					"Properties": {
+						"style": "color: var(--b3-font-color6);"
+					},
+					"Children": [
+						{
+							"Type": "NodeStrongA6kOpenMarker",
+							"Data": "**"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "成功地"
+						},
+						{
+							"Type": "NodeStrongA6kCloseMarker",
+							"Data": "**"
+						}
+					]
+				},
+				{
+					"Type": "NodeKramdownSpanIAL",
+					"Data": "{: style=\"color: var(--b3-font-color6);\"}"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "传送数据的数量（以比特、字节、分组等测量）"
+				}
+			]
+		},
+		{
+			"ID": "20220811145714-zrdxwli",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811145714-zrdxwli"
+			}
+		},
+		{
+			"ID": "20220811145825-9uaucbr",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811145825-9uaucbr",
+				"updated": "20220811145855"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t2）延迟"
+				}
+			]
+		},
+		{
+			"ID": "20220811145858-xdov6v6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811145858-xdov6v6",
+				"updated": "20220811150017"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t定义：网络把数据从一个网络节点传送到另一个号个网络节点所需要的时\t\t\t间。"
+				}
+			]
+		},
+		{
+			"ID": "20220811150018-q45p2zk",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811150018-q45p2zk",
+				"updated": "20220811150112"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t影响因素：传播延迟，交换延迟、截止访问延迟和队列延迟。"
+				}
+			]
+		},
+		{
+			"ID": "20220811150154-3fitkd3",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811150154-3fitkd3",
+				"updated": "20220811150203"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "2、OSI七层模型"
+				}
+			]
+		},
+		{
+			"ID": "20220811150149-if7pv2v",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811150149-if7pv2v",
+				"updated": "20220811150747"
+			},
+			"Children": [
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Properties": {
+						"parent-style": "display: block;"
+					},
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "image"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/image-20220811150151-pozmizv.png"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeKramdownSpanIAL",
+					"Data": "{: parent-style=\"display: block;\"}"
+				}
+			]
+		},
+		{
+			"ID": "20220811152738-ao2k0nl",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811152738-ao2k0nl"
+			}
+		},
+		{
+			"ID": "20220811152746-y9j1g1b",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811152746-y9j1g1b",
+				"updated": "20220811152753"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "数据链路层："
+				}
+			]
+		},
+		{
+			"ID": "20220811152800-6syrk9k",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811152800-6syrk9k",
+				"updated": "20220811152815"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\tLLC子层：IEEE 802.2"
+				}
+			]
+		},
+		{
+			"ID": "20220811153646-ogt4e4d",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811153646-ogt4e4d",
+				"updated": "20220811153720"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t功能：封装和标识上层数据"
+				}
+			]
+		},
+		{
+			"ID": "20220811152820-2gqv1g8",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811152820-2gqv1g8",
+				"updated": "20220811153204"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\tMAC子层：802.3（以太网），定义CSMA/CD"
+				}
+			]
+		},
+		{
+			"ID": "20220811153125-7m21h03",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811153125-7m21h03",
+				"updated": "20220811153302"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t\t  802.4（令牌总线），"
+				}
+			]
+		},
+		{
+			"ID": "20220811153228-mafi2oj",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811153228-mafi2oj",
+				"updated": "20220811153334"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t\t  802.5（令牌环）"
+				}
+			]
+		},
+		{
+			"ID": "20220811153315-13pymzk",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811153315-13pymzk",
+				"updated": "20220811153450"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t\t  802.11（无线局域网）"
+				}
+			]
+		},
+		{
+			"ID": "20220811152858-7wdfuhe",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811152858-7wdfuhe",
+				"updated": "20220811153618"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t不同局域网的MAC层不同，LLC层相同。"
+				}
+			]
+		},
+		{
+			"ID": "20220811154037-xy10khd",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811154037-xy10khd",
+				"updated": "20220811154444"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t功能：适应多种传输介质，处理信道占用、站点的标识和寻址问题。检验入站帧 的完整性。"
+				}
+			]
+		},
+		{
+			"ID": "20220811162034-dhj9lh2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811162034-dhj9lh2",
+				"updated": "20220811162235"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\tMAC地址：48位，唯一，可修改，在网卡的ROM芯片中。"
+				}
+			]
+		},
+		{
+			"ID": "20220811152859-f31q9k0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811152859-f31q9k0"
+			}
+		},
+		{
+			"ID": "20220811152900-ztngv3x",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811152900-ztngv3x",
+				"updated": "20220811152952"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "物理层：同轴电缆、双绞线、光纤、RJ-45、无线电波"
+				}
+			]
+		},
+		{
+			"ID": "20220811162537-c8tii2i",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811162537-c8tii2i"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t"
+				}
+			]
+		},
+		{
+			"ID": "20220811162538-71z5poo",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811162538-71z5poo",
+				"updated": "20220811162547"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t双绞线："
+				}
+			]
+		},
+		{
+			"ID": "20220811162549-6bejewl",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811162549-6bejewl",
+				"updated": "20220811162724"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t分类：\t"
+				},
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Properties": {
+						"parent-style": "display: block; width: 100%;",
+						"style": "width: 10000px;"
+					},
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "image"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/image-20220811162621-x9bwaqt.png"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeKramdownSpanIAL",
+					"Data": "{: style=\"width: 10000px;\" parent-style=\"display: block; width: 100%;\"}"
+				}
+			]
+		},
+		{
+			"ID": "20220811152953-e2gbx6f",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811152953-e2gbx6f"
+			}
+		},
+		{
+			"ID": "20220811162757-we5hksu",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811162757-we5hksu",
+				"updated": "20220811162805"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "连接器："
+				}
+			]
+		},
+		{
+			"ID": "20220811152954-x85skc7",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811152954-x85skc7"
+			}
+		},
+		{
+			"ID": "20220811152738-k498oxn",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811152738-k498oxn"
+			}
+		},
+		{
+			"ID": "20220811150239-5tyasqm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811150239-5tyasqm"
+			}
+		},
+		{
+			"ID": "20220811150727-1qhoxn7",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20220811150727-1qhoxn7",
+				"updated": "20220811150736"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "3、tcp/ip模型"
+				}
+			]
+		},
+		{
+			"ID": "20220811150737-m5w7px2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811150737-m5w7px2",
+				"updated": "20220811150744"
+			},
+			"Children": [
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Properties": {
+						"parent-style": "display: block;"
+					},
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "image"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/image-20220811150739-uh1kp1c.png"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeKramdownSpanIAL",
+					"Data": "{: parent-style=\"display: block;\"}"
+				}
+			]
+		},
+		{
+			"ID": "20220811150755-cs9g838",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20220811150755-cs9g838",
+				"updated": "20220811150937"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "4、交换机的作用与特点"
+				}
+			]
+		},
+		{
+			"ID": "20220811151013-qnlug5q",
+			"Type": "NodeHeading",
+			"HeadingLevel": 6,
+			"Properties": {
+				"id": "20220811151013-qnlug5q",
+				"updated": "20220811151058"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t1、主要作用"
+				}
+			]
+		},
+		{
+			"ID": "20220811151125-612ggam",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811151125-612ggam",
+				"updated": "20220811151253"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t连接多个以太网物理段，隔离冲突域、利用桥接和交换提高局域网性能、扩展局域网范围。"
+				}
+			]
+		},
+		{
+			"ID": "20220811151307-46drw6b",
+			"Type": "NodeHeading",
+			"HeadingLevel": 6,
+			"Properties": {
+				"id": "20220811151307-46drw6b",
+				"updated": "20220811151552"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t2、特点"
+				}
+			]
+		},
+		{
+			"ID": "20220811151553-gpxcjyz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811151553-gpxcjyz",
+				"updated": "20220811151628"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t1）OSI工作层：数据链路层-Mac子层  和 物理层。利用mac地址信息进行交换。"
+				}
+			]
+		},
+		{
+			"ID": "20220811151419-k0r2u7y",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811151419-k0r2u7y",
+				"updated": "20220811151729"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t2）提供以太局域网间的桥接与交换。"
+				}
+			]
+		},
+		{
+			"ID": "20220811151730-ippzk2b",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811151730-ippzk2b",
+				"updated": "20220811151816"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t3）数据交换依靠MAC地址映射表，由交换机自学得来。"
+				}
+			]
+		},
+		{
+			"ID": "20220811150815-h2xq9yd",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811150815-h2xq9yd",
+				"updated": "20220811151055"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t"
+				}
+			]
+		}
+	]
+}

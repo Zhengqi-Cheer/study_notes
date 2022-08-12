@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-08-10T10:05:45+08:00
+
+====== 以太网交换 ======
+Created 星期三 10 八月 2022
+
+**1、二层交换原理**
+
+	工作环境：OSI第二层--数据链路层
+	工作流程：
+
+**2、三层交换原理**

@@ -1,0 +1,19 @@
+{
+	"ID": "20220811163850-4kzawvo",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220811163850-4kzawvo",
+		"title": "PPP协议",
+		"updated": "20220811163856"
+	},
+	"Children": [
+		{
+			"ID": "20220811163850-9lcjt0d",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811163850-9lcjt0d",
+				"updated": "20220811163850"
+			}
+		}
+	]
+}

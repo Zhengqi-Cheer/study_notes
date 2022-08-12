@@ -1,0 +1,19 @@
+{
+	"ID": "20220811172033-lfic25j",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220811172033-lfic25j",
+		"title": "以太网交换基本原理",
+		"updated": "20220811172055"
+	},
+	"Children": [
+		{
+			"ID": "20220811172033-yc6x4kx",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220811172033-yc6x4kx",
+				"updated": "20220811172033"
+			}
+		}
+	]
+}
