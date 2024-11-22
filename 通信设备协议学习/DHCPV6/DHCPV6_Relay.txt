@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2024-10-29T15:20:45+08:00
+
+====== DHCPV6 Relay ======
+Created 星期二 29 十月 2024
+
+
+== ==========标准文档========== ==
+rfc8415
+
+
+== =============relay 头=============== ==
+{{.\pasted_image.png?width=481}}
+
+	peer-address为上一个中继地址（仅在relay-forw被填写），link-address似乎仅在hop-count为0是填写client的本地链路地址。
+如果是relay，必定含有relay message option(9)。
+经过多级中继，上一级dhcp数据会嵌套在当前的relay message options中。
+😍️
+
+ps: 到服务器的过程是： 一层一层加dhcp relay message option的过程。
+	而，到client的过程是一层一层剥dhcp relay message option的过程。
+
+
+== =================================== ==
+
+
+

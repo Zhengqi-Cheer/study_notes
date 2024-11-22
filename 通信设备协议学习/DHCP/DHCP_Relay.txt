@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-11-28T14:09:29+08:00
+
+====== DHCP Relay ======
+Created 星期一 28 十一月 2022
+
+
+
+== ================================ ==
+对于来自经过dhcp relay的报文处理：
+1、来自不信任的网络：
+	对报文中的改的giaddr 项置0。
+2、来自信任网络
+
+3、来自
+

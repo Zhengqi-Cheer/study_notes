@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2024-11-06T09:27:48+08:00
+
+====== GDB ======
+Created 星期三 06 十一月 2024
+
+{{.\pasted_image.png}}
+
+gdb -p <pid>  调试运行的进程

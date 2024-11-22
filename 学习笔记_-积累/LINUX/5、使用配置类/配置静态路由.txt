@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-08-19T18:00:31+08:00
+
+====== 配置静态路由 ======
+Created 星期五 19 八月 2022
+
+说明：添加一条静态路由
+平台：ubuntu 16.04 
+
+--------------------

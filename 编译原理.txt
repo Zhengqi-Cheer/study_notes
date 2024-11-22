@@ -1,0 +1,42 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2024-10-09T10:21:01+08:00
+
+====== 编译原理 ======
+Created 星期三 09 十月 2024
+
+
+过程：预处理-->	编译和优化--> 汇编--> 链接
+
+预处理：展开头文件、宏替换，去掉注释，条件编译
+编译   ：检查语法，生成汇编
+汇编   ：把生成的汇编文件汇编成机器码
+链接	 ：链接到一起生成可执行程序 a.out 
+
+== ============================================================= ==
+1、gcc
+
+编译生成可执行文件
+gcc -o newname file.c                    --> -o 表示命名
+
+编译生成 *.o 文件
+gcc -c newname file.c                    --> -c 
+
+预编译，生成 .i 文件
+gcc -E newname file.c                    --> -E 
+
+编译成汇编语言，生成 .s 文件
+gcc -S newname file.c                    --> -S 
+
+
+2、生成静态链接库
+ar -rcs lib.a file.o   #蒋file.o文件加入到lib库中。 --> -r 表示创建库
+
+3、生成动态链接库 fixme
+gcc -shared lib.so file.c
+
+
+
+
+
+

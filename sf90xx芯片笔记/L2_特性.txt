@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-08-16T09:13:57+08:00
+
+====== L2 特性 ======
+Created 星期二 16 八月 2022
+
+1、地址维护
+	二层地址表为hash表，查找KEY为{ovid，mac}
+	
+2、地址学习
+	a）硬件学习
+		硬件自动更新二层地址。
+	b）硬件不学习，跳过L2learning
+		直接转发
+	c）丢弃
+		将源MAC在表中不存在的报文丢弃。
+	d）整流上送cpu
+		源MAC不存在于表中的报文送到CPU。cpu判断若判断学习，则写入对应的地址表项。
+	e）带pending位的学习
+		软件学习会把同一源MAC的报文送入cpu，影响cpu的性能，而学习仅仅需要一份报文信息。该模式下硬件预写入一个带该MAC的entry，后续的同一MAC的报文就不会送入CPU学习，后续报文也要等待CPU的学习结果决定是否转发。学习完，无论结果如何都会删除该MAC的entry。
+	
+	
+	相关表项与寄存器
+
+	 {{.\pasted_image001.png}}
+	{{.\pasted_image002.png}}
+	{{.\pasted_image003.png}}

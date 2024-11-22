@@ -26,3 +26,8 @@ Created 星期三 10 八月 2022
 	available = yes
 	browseable = yes                 		#网络邻居
 	security = user
+
+3、重启samba服务
+	ssudo systemctl restart smbd.service
+
+4、使用命令sudo smbpasswd -a 用户名       添加用户并设置密码

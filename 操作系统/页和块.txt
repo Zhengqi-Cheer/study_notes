@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-08-15T14:07:07+08:00
+
+====== 页和块 ======
+Created 星期一 15 八月 2022
+
+**页（page）**：内存的最小存储单元 。是块的2^n倍。虚拟概念。
+		linux可以通过命令getconf PAGE_SIZE 进行查看页的大小。
+		{{.\pasted_image002.png}}
+
+————————————————————————————
+**扇区**：硬盘物理读取的基本单位。通常是512bytes。
+	linux下使用 sudo /sbin/fdisk -l 查看。
+	{{.\pasted_image.png}}
+	
+	其中，sector size就是扇区的大小。
+**————————————————————————————**
+
+**磁盘块，IO BLOCK** 
+	文件系统读写数据的最小单位。磁盘块是一个虚拟概念。
+	
+	linux下通过stat /boot/来查看。
+	{{.\pasted_image001.png}}
+	IO BLOCK就是磁盘块的大小。
+	磁盘块的大小可以通过blockdev命令更改。
+	
+
+

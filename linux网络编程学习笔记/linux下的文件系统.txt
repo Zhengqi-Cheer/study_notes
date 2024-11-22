@@ -1,0 +1,78 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2024-10-15T10:33:37+08:00
+
+====== linux下的文件系统 ======
+Created 星期二 15 十月 2024
+
+
+经典话：unix下一切皆文件
+
+
+== ==================================== ==
+
+一、文件系统创建
+1、查看文件分区 fdisk -l
+结果如下：
+Disk /dev/sda: 10 GiB, 10737418240 bytes, 20971520 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x97f48920
+
+设备       启动    Start   末尾   扇区  Size Id 类型
+/dev/sda1  *        2048 18970623 18968576    9G 83 Linux
+/dev/sda2       18972670 20969471  1996802  975M  5 扩展
+/dev/sda5       18972672 20969471  1996800  975M 82 Linux 交换 / Solaris
+
+
+
+2、使用fdisk 设备名进行分区（会有提示）
+
+3、格式化mkfs 格式化分区（fixme）
+
+4、挂载分区 moute 
+	如 建立目录/packet， 然后moute [[/dev/sda2]]  /packet
+5、使用df 查看挂载情况
+结果如下
+Filesystem           1K-blocks      Used Available Use% Mounted on
+devtmpfs                416408         0    416408   0% /dev
+tmpfs                   441784         0    441784   0% /dev/shm
+tmpfs                   441784         4    441780   0% /tmp
+tmpfs                   441784         0    441784   0% /run
+/dev/ubi1_0             106336     34104     67396  34% /firm0
+/dev/ubi2_0             106336     61996     39504  61% /firm1
+/dev/ubi3_0              86748     38936     43384  47% /data
+/dev/ubi4_0              14924      4528      9576  32% /cfg
+
+
+二、挂载文件系统
+使用文件系统前，需使用mount命令将文件系统挂载到分区上。
+文件包含普通文件、设备文件、nfs文件、虚拟文件系统nfs。
+
+普通文件：即普通文件、目录等
+设备文件：ls -l /dev/rtc0
+	crw------- 1 root root 249, 0 10月 15 20:22 /dev/rtc0
+	设备文件还有三个属性：设备类型、主设备号（第5项），次设备号。
+	设备类型：c表示字符设备，b表述块设备。字符设备可以一次读写过程中传输任意大小的数据。块设备可以一次读写过程中访问固定大小的数据，读写性能更快。
+	主设备号：对应内核的驱动程序。
+	次设备号：定义了系统中的物理位置。
+	
+1、设备文件的创建
+使用mknod [option] ... NAME TYPE [MAJOR MINOR]
+
+
+三、虚拟文件系统nfs
+	linux文件系统使用一组通用对象表示：超级块（superblock），节点索引（inode），目录结构（dentry），文件（file）
+	1.1 文件系统
+	可使用cat [[/proc/filesystems]] 查看用户空间的文件系统。linux可使用register_filesystem添加新的文件系统。
+	1.2超级块
+	超级块结构表示一个文件系统。可在linux/fs.h中查看详细结构体。
+	
+	2.1文件的通用操作方法
+		文件空间映射： mmap（）， mumap。映射一段文件地址到内存。
+
+
+
+

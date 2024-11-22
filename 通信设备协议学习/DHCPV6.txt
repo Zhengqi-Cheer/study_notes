@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2024-10-29T15:20:33+08:00
+
+====== DHCPV6 ======
+Created 星期二 29 十月 2024
+
+== ==========标准文档========== ==
+rfc8415，此文档包含dhcpv6 client、relay和server的描述。
+
+
+### 两步交互和四步交互
+	两步交互：（主要是两次交互）
+		1、client 发送 solicit 报文，并携带Rapid Commit Option以请求快速分配。
+		2、server若支持快速分配，回复Replay，并携带Rapid Commit Option。若不支持，则按四步交互回复，advertise报文。
+
+
+
+### 无状态DHCPv6
+	主要是通过路由通告RA(ICMPv6)获取地址，通过DHCPv6服务器获取其他配置信息，如dns。
+
+
+

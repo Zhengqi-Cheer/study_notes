@@ -206,6 +206,7 @@
                       "title": "以太网交换基本原理"
                     },
                     {
+                      "active": true,
                       "children": {
                         "action": "",
                         "blockId": "20220811174624-il5hfnj",
@@ -230,7 +231,6 @@
                       "title": "三层交换机原理"
                     },
                     {
-                      "active": true,
                       "children": {
                         "action": "",
                         "blockId": "20220812161930-tm8kko8",
