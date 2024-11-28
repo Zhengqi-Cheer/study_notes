@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2024-11-25T15:31:20+08:00
+
+====== PIM ======
+Created 星期一 25 十一月 2024
+
+英文全称：Protocol Independent Multicast（协议无关组播）
+
+功能：一种组播路由协议，将组播数据流发送到组成员所连接的设备上，实现路由查找和转发。
+	此协议还包含：
+		PIM-SM(协议无关组播-稀疏模式)，适合规模大、成员分散的组网
+		PIM-DM（协议无关组播-密集模式），适合规模小，成员集中的组网
+		
+

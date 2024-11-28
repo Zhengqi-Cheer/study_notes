@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2024-11-25T15:31:32+08:00
+
+====== MSDP ======
+Created 星期一 25 十一月 2024
+
+功能：解决多个PIM-SM域之间的互联的 一种域间协议。实现跨域转发。
