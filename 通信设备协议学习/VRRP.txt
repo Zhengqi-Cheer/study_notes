@@ -12,7 +12,7 @@ Created 星期一 25 十一月 2024
 优点：冗余备份、负载分担、联动功能。
 
 ### 
-{{.\pasted_image.png?height=233}}
+{{.\pasted_image.png?width=407}}
 
 == ===基本概念： ==
 	1. VRRP路由器（Vrrp Router）：运行VRRP协议的设备。
@@ -21,7 +21,7 @@ Created 星期一 25 十一月 2024
 	4. Backup路由器（Virtual Router Backup）：一组没有承担转发任务的VRRP设备，当Master出现故障后，与其他Backup竞争产生Master设备。
 	5. VRID：虚拟路由器的表示。
 	6. 虚拟IP地址（Virtual IP Address）：虚拟路由器的IP地址，一个虚拟路由器可以有多个IP地址，由用户配置。
-	7. IP地址的拥有者（IP Address Owner）：
+	7. IP地址的拥有者（IP Address Owner）：原文 --- If the Priority = 255 (i.e., the router owns the IP address(es) associated with the virtual router)。
 	8. 虚拟mac地址：一由VRID生成，一个虚拟路由器拥有一个虚拟MAC地址，格式： 00-00-5e-00-01-{VRID} (v4) 或00-00-5e-00-02-{VRID} (v6)。
 
 
@@ -64,7 +64,7 @@ Created 星期一 25 十一月 2024
 			4. 若是虚拟地址的拥有这，则接收目的IP为虚拟地址的IP报文
 			5. 收到优先级更大的报文，则立刻转换为Backup状态。
 			6. 优先级相同，本地接口IP地址比对端小，也立刻转换为Backup状态。
-			7. 端口shutdown，变为Init状态
+			7. 端口shutdown，变为Init状态。
 		b. 初始状态：此状态对VRRP报文不做任何处理，刚配置或故障时是此状态。当接口收到UP的消息后，若设备状态是优先级是255，则直接进入Master状态，小于255则进入Backup状态。
 		c. 备份状态：完成以下工作：
 			1. 接收Master发送的VRRP报文，判断Master的转态是否正常。
@@ -82,7 +82,11 @@ Created 星期一 25 十一月 2024
 			7. 接收到接口Shutdown，转换为初始状态。
 
 	//**__注意：疑问？多少个定时器，上述定时器没有指明是哪个。__**//
+	答：
+		1. master发送宣告定时器。
+		2. backup接收宣告超时定时器。
 	
+
 == ====VRRP工作过程 ==
 	1. 根据优先级选举出Master。Master发送免费ARP报文，通过其他主机或设备。
 	2. Master设备周期性发送VRRP通告报文。
@@ -109,6 +113,7 @@ Created 星期一 25 十一月 2024
 	目前仅有VRRPv2支持。提供了2中认证方式：(1) 简单字符认证方式。 (2) MD5认证方式。 
 	注意：同一VRRP备份组，使用统一认证方式和认证字，否则无法协商。
 	
+
 == ====管理VRRP ==
 
 == ====VRRP与链路状态联动 ==

@@ -1,0 +1,87 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2024-11-29T09:37:33+08:00
+
+====== 4.4 Linux下的线程 ======
+Created 星期五 29 十一月 2024
+
+
+
+
+
+
+
+线程优点：
+	1. 系统资源消耗低
+	2. 速度快
+	3. 线程间的数据共享很容易。
+
+
+
+
+
+	可使用man pthread
+	编程时需包含头文件pthread.h，生成可执行文件时，需链接库 libpthread.a 或者 libpthread.so。like this：gcc xxx.c -lpthread
+	
+#### Linux下的子线程创建
+	1. 创建子线程： pthread_create()
+#### 线程的结束函数-2个方式
+	1. pthread_join 阻塞进程，进程等待线程结束。
+	2. pthread_exit 直接退出线程，仅退出当前线程，次操作不影响进程和其他线程。
+#### 线程的属性
+	1. 线程属性的初始化(pthread_attr_init())必须在线程创建之前使用。线程的属性主要包含：摘取状态，调度优先级，运行栈地址，运行栈地址大小，优先级。
+
+
+
+== =======线程间的互斥 ==
+
+	工作流程：主要保护公共内存的访问。从lock开始直到unlock（此代码区域为保护区），不能执行被保护区域代码，同一时间只有一个线程执行，另一个代码执行到此处时会被阻塞，直到unlock。
+	注意互斥锁创建后需要删除释放资源。
+	函数组：
+	1. pthread_mutex_init(); 互斥锁初始化函数
+	2. pthread_mutex_lock(); 互斥锁的锁定函数
+	3. pthread_mutex_trylock(); 互斥锁的预锁定函数
+	4. pthread_mutex_unlock();  互斥锁的解锁函数
+	5. pthread_mutex_destroy(); 互斥锁的销毁函数
+
+
+== ====线程的绑定状态 ==
+
+
+	设置线程属性，其函数为pthread_attr_setscope().
+	
+	作用：
+		优点：避免cpu核之间的迁移（提高运行效率和性能）。
+		缺点：需要更多的cpu核心满足绑定条件，增加硬件成本。
+
+
+
+
+== ====线程的分离状态 ==
+
+	主要是//**线程终止**//后的资源释放方式不同。
+	非分离状态：（默认是此状态）线程需等到其他线程调用pthread_join()返回后才会结束，并释放资源，否则直到进程结束。
+	分离状态：分离线程不需要等待其他线程，当前运行线程结束后就释放线程资源。
+	
+	相关函数： pthread_attr_setdetachstate(pthread_attr_t *attr, int detachstate), 
+			PTHREAD_CREATE_JOINABLE：非分离线程
+			PTHREAD_CREATE_DETACHED：分离线程
+	注意：分离线程的运行速度很快。
+
+
+
+
+
+== ===线程中的信号量 ==
+
+
+	1. 线程信号量初始化 sem_init()
+	2. 线程信号量增加 sem_post()
+	3. 线程信号量等待 sem_wait() --- 若信号量为0，则阻塞等待信号量大于0；每次使信号量减1，不为0时将不再减少。
+	4. 线程信号量摧毁 sem_destroy()
+
+
+
+
+
+
