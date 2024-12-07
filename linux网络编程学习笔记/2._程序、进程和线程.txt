@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2024-10-30T10:01:08+08:00
 
-====== 程序、进程和线程 ======
+====== 2. 程序、进程和线程 ======
 Created 星期三 30 十月 2024
 
 进程间通信基本方式：消息传递、内存共享。

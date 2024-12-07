@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2024-12-07T11:51:28+08:00
+
+====== 3. 应用层网络服务简介 ======
+Created 星期六 07 十二月 2024
+
+
+== FTP协议 ==
+	1. 全称：File transfer Protocol，文件传输协议。RFC959。
+	2. 模型
+		a. {{.\pasted_image.png}}
+	3. 属于tcp协议，双端口，控制端口21，数据端口20。
+	4. 两个工作模式
+		a. 主动模式：
+		b. 被动模式：
+	5. 传输
+
