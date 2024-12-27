@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2024-12-13T10:29:49+08:00
+
+====== 4.4 协议号获取函数 ======
+Created 星期五 13 十二月 2024
+
+
+
+####
+	getprotobyname() 根据//**官方协议名称**//查询到协议号，如：struct protoent* proto_ptr = getprotobyname("vrrp");

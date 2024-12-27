@@ -6,3 +6,38 @@ Creation-Date: 2024-12-07T16:14:57+08:00
 Created 星期六 07 十二月 2024
 
 
+
+####查看网络连接情况
+	使用netstate
+	或者cat [[/proc/net/tcp]]  ------ 不一定是tcp,也可是udp。
+	
+
+
+####通用套接字数据结构
+	struct sockaddr {			
+	sa_family_t sa_family;
+	char sa_data[14];
+	}
+
+
+	||
+	\/
+	
+	struct sockaddr_in {
+	u8 sin_len;
+	u8 sin_family;
+	u16 sin_port;
+	struct in_addr sin_addr;
+	char sin_zero[8];
+	}
+
+
+
+####socket的类型
+	SOCK_STREAM：流类型，表示双向的字节流，与管道类似；在收发数据前不行已连接。
+	SOCK_DGRAM：可以使用sendto 和recvfrom
+	SOCK_PACKET：专用的数据包，直接从设备驱动接收数据。
+
+
+
+的

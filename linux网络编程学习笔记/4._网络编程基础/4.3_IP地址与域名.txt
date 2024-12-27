@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2024-12-13T10:21:58+08:00
+
+====== 4.3 IP地址与域名 ======
+Created 星期五 13 十二月 2024
+
+
+
+通过域名获取IP地址可以使用函数 gethostbyname(); 头文件：#include <netdb.h>
+
+
+
+
+	注意：此函数不可重入，需在调用此函数后立即使用信息，否则可能信息会被覆盖。--ps:感觉和编程习惯有关系。
+
+####

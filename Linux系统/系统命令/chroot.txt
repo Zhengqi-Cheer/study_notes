@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2024-12-16T11:30:00+08:00
+
+====== chroot ======
+Created 星期一 16 十二月 2024
+
+
+####作用
+	1. 改变根目录位置

@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2024-12-21T08:58:28+08:00
+
+====== 3.2 递增/减运算符重载 ======
+Created 星期六 21 十二月 2024
+
+
+1. 前置递增/减
+	a. 函数名语法：类& opeator++(void)  / 类& opeator--(void)
+	b. 函数体逻辑：先++/--，返回*this;
+2. 后置递增/减
+	a. 函数名语法：类 opeator++(int)
+	b. 函数体逻辑：tmp记录当前对象，在本体++/--，返回tmp；
+
+
+注意：前置返回引用，后置返回对象。

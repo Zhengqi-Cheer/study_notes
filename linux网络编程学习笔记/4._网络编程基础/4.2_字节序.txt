@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2024-12-12T16:26:38+08:00
+
+====== 4.2 字节序 ======
+Created 星期四 12 十二月 2024
+
+
+
+大端序： 变量的内存地址的起始地址存放在高字节。
+小端序： 变量的内存地址的起始地址存放在低字节。
+
+
+####主机序<==>网络字节序
+	htons()
+	htonl()
+	
+	
+	ntohs()
+	ntohl()
+	
+	
+

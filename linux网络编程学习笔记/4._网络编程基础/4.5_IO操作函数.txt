@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2024-12-13T11:18:44+08:00
+
+====== 4.5 IO操作函数 ======
+Created 星期五 13 十二月 2024
+
+####recv()函数--默认阻塞。
+	接收数据。
+####send()函数
+		一般判断返回值 < len 则没有发送完全。
+####readv()函数
+	接收多个缓冲区（块数据）数据，
+
+
+####writev()函数
+	向多个缓冲区（块数据）写入数据，
+	
+	
+--------------------
+####recvmsg()函数-- 默认阻塞。ps：与进程间通信的不同（msgrcv）
+	原型：ssize_t recvmsg(int sockfd, struct msghdr *msg, int flags);
+	{{.\pasted_image.png?height=376}}
+
+####sendmsg()函数
+
+
+
+
+
+

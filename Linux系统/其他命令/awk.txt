@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2024-12-25T14:14:03+08:00
+
+====== awk ======
+Created 星期三 25 十二月 2024
+
+
+
+
+###awk:文本解析工具，
+
+	1. 语法： awk options '匹配字段 {action}' file.txt
+	2. options:
+		a. -F  :设置分隔符（用于区分第几列），默认分隔符是空格。

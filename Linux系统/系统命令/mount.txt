@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2024-12-17T11:10:12+08:00
+
+====== mount ======
+Created 星期二 17 十二月 2024
+
+
+####定义
+	1. 挂载文件系统命令
+####：
+	语法：mount [options] <--source> <source> | [--target] <directory>
+
+	1. 一些参数：
+		a. --bind   用于将一个目录（或文件）绑定到另一个目录上。是的原始目录在新目录可用。
+		b. -t 	type的缩写，type可填参数有：（fixme）。取消绑定使用umount <directory>.
+

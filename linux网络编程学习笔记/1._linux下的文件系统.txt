@@ -32,8 +32,8 @@ Disk identifier: 0x97f48920
 
 3、格式化mkfs 格式化分区（fixme）
 
-4、挂载分区 moute 
-	如 建立目录/packet， 然后moute [[/dev/sda2]]  /packet
+4、挂载分区 mount 
+	如 建立目录/packet， 然后mount [[/dev/sda2]]  /packet
 5、使用df 查看挂载情况
 结果如下
 Filesystem           1K-blocks      Used Available Use% Mounted on
