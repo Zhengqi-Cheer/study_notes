@@ -1,0 +1,107 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2024-12-30T16:20:28+08:00
+
+====== iptables ======
+Created 星期一 30 十二月 2024
+
+1. 概念：
+	a. iptables其实不是真正的防火墙；
+	b. netfilter才是防火墙真正的安全框架（framework），netfilter位于内核空间；
+	c. iptables其实是一个命令行工具，位于用户空间，我们用这个工具操作真正的框架；
+2. 功能：
+	a. 封包重定向
+	b. 封包过滤
+	c. 网络地址转换（NAT）
+3. 定义：
+	a. **链**: 共五条链，即5个关卡；分别是INPUT, OUTPUT,PREROUTING(路由前),FORWARD(转发),POSTROUTING(路由后).
+	b. **规则**：每条链下都有不同的规则（匹配项+动作），经过每个关卡都__会遍历下面的所有规则__，条件符合就执行动作。
+	c. **表**：具有相同功能的规则称为表。共四种：
+		1. filter：负责过滤功能，防火墙；内核模块：iptables_filter；
+		2. nat：网络地址转换功能； 内核模块：iptable_nat;
+		3. mangle：拆解把报文，做出修改，并重新封装报文；iptable_mangle； 
+		4. raw：关闭nat表上启用的链接追踪机制； iptable_raw;
+	d. **自定义的所有规则都存在于这4张表中**。
+4. 流程
+	{{.\pasted_image001.png?width=800}}
+5. 表和链的关系
+	a. PREROUTING的规则：raw, mangle, nat，
+	b. INPUT的规则：mangle, filter,
+	c. FORWARD的规则:mangle, filter,
+	d. OUTPUT的规则:raw, mangle, nat, filter,
+	e. POSTROUTING的规则：mangle, nat,
+
+	**__注意__**：
+		1. 我们在实际的使用过程中，往往是通过”表”作为操作入口，对规则进行定义的。
+		2. 同一条链的优先级：raw->mangle->nat->filter。
+		3. OUTPUT链包含了4种表。
+		4. __可以在某个表自定义链，将针对某个应用程序所设置的规则放置在这个自定义链中，但是自定义链接不能直接使用，只能被某个默认的链当做动作去调用才能起作用__
+6. 匹配条件
+	a. 基本匹配条件：源IP，目的IP
+	b. 拓展匹配条件：源端口，目的端口
+7. 处理动作：
+	a. ACCEPT:允许数据包通过。
+	b. DROP:直接丢弃，不给任何回应消息。
+	c. REJECT:拒绝数据包通过，必要时会回应发送端一个响应报文。
+	d. SNAT:源IP地址转换。
+	e. DNAT:目的IP地址转换。
+	f. MASQUERADE:SNAT的一种特殊形式，适用于动态、零时的IP。
+	g. REDIRECT:在本机做端口映射
+	h. LOG:仅记日志(/var/log/messages)，并将数据数据报文传递给下一条规则。
+8. iptables的语法
+	a. iptables [-t table] {-A|-C|-D} chain rule-specification
+	
+		   ip6tables [-t table] {-A|-C|-D} chain rule-specification
+	
+		   iptables [-t table] -I chain [rulenum] rule-specification
+	
+		   iptables [-t table] -R chain rulenum rule-specification
+	
+		   iptables [-t table] -D chain rulenum
+	
+		   iptables [-t table] -S [chain [rulenum]]
+	
+		   iptables [-t table] {-F|-L|-Z} [chain [rulenum]] [options...]
+	
+		   iptables [-t table] -N chain
+	
+		   iptables [-t table] -X [chain]
+	
+		   iptables [-t table] -P chain target
+	
+		   iptables [-t table] -E old-chain-name new-chain-name
+	
+		   rule-specification = [matches...] [target]
+	
+		   match = -m matchname [per-match-options]
+	
+		   target = -j targetname [per-target-options]
+	b. options
+		1. -t , --table  //table//     		表，raw,mangle,nat,filter,....等表，具体看版本，filter是默认的表，如果没有-t。
+		2. -A, --append chain rule    	追加，在链后面追加一条或多条规则。
+		3. -C, --check chain rule  		检查某一规则在某条链上是否存在。
+		4. -D, --delete chain rulenum   	删除一条或多条规则。
+		5. -I, --insert chain [rulenum] rule  插入一条规则在编号处，没有编号，不知道(fixme)。
+		6. -R, --replace chain rulenum rule  替换rulenum号的规则。
+		7. -L, --list all rules in seletcted chain  列出选择链的所有规则。
+		8. -F, --flush [chain]			擦除整条链的规则。
+		9. -Z, --zore [chain [rulenum]] 清空规则匹配到的报数和字节数统计
+		10. -N, --new-chain chain    	创建一个用户自定义链。
+		11. -X, --delete-chain [chain]	删除用户自定义的链，必须是空链。
+		12. -P, --policy chain target 	调整内定(非用户自定义)链的优先级
+		13. -R, --rename			重命名自定义链名
+		14. -p, --protocol 			协议
+		15. -s, --source address[/mask][,...] 	
+		16. -d, --destination address[/mask][,...]
+		17. -m, --match match
+		18. -j, --jump target
+		19. -i, --in-interface name
+		20. -o, --out-interface name
+		21. -c, --set-counters packets bytes 使能统计功能
+	注意：一般参数默认表项都是filter表，
+
+
+
+
+
+
