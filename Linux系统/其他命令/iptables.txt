@@ -48,6 +48,7 @@ Created 星期一 30 十二月 2024
 	f. MASQUERADE:SNAT的一种特殊形式，适用于动态、零时的IP。
 	g. REDIRECT:在本机做端口映射
 	h. LOG:仅记日志(/var/log/messages)，并将数据数据报文传递给下一条规则。
+
 8. iptables的语法
 	a. iptables [-t table] {-A|-C|-D} chain rule-specification
 	
