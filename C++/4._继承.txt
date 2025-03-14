@@ -13,6 +13,9 @@ Created 星期四 26 十二月 2024
 	1. 定义：在现有类(基类)的基础上定义另一个类(派生类)。
 	2. 继承方式：public, protected, private;
 		a. 新类型中不同继承方式：
+		b. public:派生类在基类中的访问权限不变，基类的private派生类不可访问。
+		c. protected：派生类在基类中的访问权限除了private，其他全为protected，基类的private派生类不可访问。
+		d. private：派生类在基类中的访问权限全为private， 基类的private派生类不可访问。
 	3. 语法：class(空格)派生类名称:继承方式(空格)基类名称{};
 	4. 继承中的构造和析构顺序：
 		a. 构造：现有基类，再有派生类。
@@ -28,6 +31,6 @@ Created 星期四 26 十二月 2024
 		a. class 类1: 权限 类2,权限 类3{};
 	8. 多继承中的菱形问题---使用虚继承解决
 		a. fixme，说不清楚。
-		b. 如：class [[sheeptuo:virtual]] public sheep,
+		b. 如：class sheeptuo:virtual public sheep,
 注意：
 	1. sizeof(派生类) = sizeof(基类) + 派生类增加的属性大小；虽然不能访问基类的私有属性，但是依然继承了，只是不能访问。
